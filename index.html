@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сферит</title>
+  <link rel="preload" href="fonts/TildaSans-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/TildaSans-Semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/TildaSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CocomatPro-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/CocomatPro-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="less/styles.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__main-header main-header main-header--top main-header--opened">
+          <section class="main-header__hero hero">
+            <div class="hero__container container">
+              <div class="hero__logo-block">
+                <a class="hero__link" href="#">
+                  <img class="hero__logo-image" src="img/logo.svg" width="129" height="41"
+                    alt="Логотип компании Сферит.">
+                </a>
+                <div class="hero__logo-description">Разработчик и производитель оборудования для систем
+                  безопасности,
+                  автоматизации и диспетчеризации</div>
+              </div>
+              <div class="hero__form">
+                <input class="hero__input" type="search" name="search" id="site-search" placeholder="Поиск по сайту"
+                  autocomplete="off">
+                <button class="hero__submit" type="submit"></button>
+              </div>
+              <button class="hero__mobile-search-button hero__button" type="button"></button>
+              <button class="hero__button hero__button--user"></button>
+              <div class="hero__contacts">
+                <a class="hero__phone-link" href="tel:+79161578274">+7 916 157-82-74</a>
+                <a class="hero__mail-link" href="mailto:info@sferit.com">info@sferit.com</a>
+              </div>
+              <button class="main-header__open-button main-header__open-button--opened"></button>
+              <button class="main-header__close-button main-header__close-button--closed"></button>
+            </div>
+          </section>
+          <section class="main-header__additional additional">
+            <div class="additional__container container">
+              <nav class="additional__nav">
+                <ul class="additional__list">
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Продукты и решения</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Поддержка и гарантия</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Документация</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Проекты</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Новости</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Партнерам</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+          <div class="main-header__popup main-header-popup main-header-popup--closed">
+            <div class="main-header-popup__container container">
+              <p class="main-header-popup__description">Разработчик и производитель оборудования для систем
+                безопасности,
+                автоматизации и диспетчеризации</p>
+              <ul class="main-header-popup__list">
+                <li class="main-header-popup__item main-header-popup__item--relative">
+                  <button class="main-header-popup__link main-header-popup__link--relative">Продукты и
+                    решения</button>
+                  <ul class="main-header-popup__submenu main-header-popup__submenu--closed">
+                    <li class="main-header-popup__subitem"><a class="main-header-popup__sublink"
+                        href="#">Коммутаторы</a>
+                    </li>
+                    <li class="main-header-popup__subitem"><a class="main-header-popup__sublink"
+                        href="#">Маршрутизаторы</a>
+                    </li>
+                    <li class="main-header-popup__subitem"><a class="main-header-popup__sublink" href="#">WiFi</a></li>
+                    <li class="main-header-popup__subitem"><a class="main-header-popup__sublink"
+                        href="#">Безопасность</a>
+                    </li>
+                    <li class="main-header-popup__subitem"><a class="main-header-popup__sublink" href="#">Серверы</a>
+                    </li>
+                  </ul>
+                  <div class="main-header-popup__arrow"></div>
+                </li>
+                <li class=" main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Поддержка и гарантия</a>
+                </li>
+                <li class=" main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Документация</a>
+                </li>
+                <li class="main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Проекты</a>
+                </li>
+                <li class="main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Новости</a>
+                </li>
+                <li class="main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Партнерам</a>
+                </li>
+                <li class="main-header-popup__item">
+                  <a class="main-header-popup__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="main-header-popup__contacts">
+                <a class="main-header-popup__phone-link" href="tel:+79161578274">+7 916 157-82-74</a>
+                <a class="main-header-popup__mail-link" href="mailto:info@sferit.com">info@sferit.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-header page-header__main-header main-header--scroll main-header--closed">
+          <section class="main-header__hero hero">
+            <div class="hero__container container">
+              <a class="hero__link" href="#">
+                <img class="hero__logo-image" src="img/logo.svg" width="129" height="41" alt="Логотип компании Сферит.">
+              </a>
+              <nav class="additional__nav">
+                <ul class="additional__list">
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Продукты и решения</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Поддержка и гарантия</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Документация</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Проекты</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Новости</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Партнерам</a>
+                  </li>
+                  <li class="additional__item">
+                    <a class="additional__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="hero__button-wrapper">
+                <button class="hero__button hero__button--search"></button>
+                <button class="hero__button hero__button--user"></button>
+              </div>
+              <div class="hero__contacts">
+                <a class="hero__phone-link" href="tel:+79161578274">+7 916 157-82-74</a>
+                <a class="hero__mail-link" href="mailto:info@sferit.com">info@sferit.com</a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="main-header__search-block search-block search-block--closed">
+          <div class="search-block__container container">
+            <div class="search-block__form">
+              <input class="search-block__input" type="search" name="search" id="scroll-site-search"
+                placeholder="Поиск по сайту" autocomplete="off">
+              <button class="search-block__submit" type="submit"></button>
+              <button class="search-block__close-button" type="button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Сайт компании "Сферит". Оборудования для систем безопасности, автоматизации и
+        диспетчеризации</h1>
+      <section class="page-main__promo promo">
+        <div class="promo__container container">
+          <h2 class="promo__header">Создаем<span class="promo__header-painted"> и обеспечиваем
+              бесперебойную работу</span><br>
+            <span class="promo__header-right">вашей ИТ-<span class="promo__random-right">инфраструктуры</span></span>
+          </h2>
+          <div class="promo__swiper swiper">
+            <ul class="promo__list swiper-wrapper">
+              <li class="promo__item swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/product1-mob.png" width="515" height="142">
+                  <img class="promo__image" src="img/product1.png" width="1193" height="328" alt="Фото товара.">
+                </picture>
+                <span class="promo__tooltip">
+                  <button class="promo__tooltip-toggle" type="button"></button>
+
+                  <span class="promo__tooltip-text">Небольшое описание оборудвания на пару строк</span>
+
+                </span>
+                <div class="promo__text">
+                  <h3 class="promo__product-name">SFX14000-BSRV-12U</h3>
+                  <p class="promo__product-description">Небольшое описание оборудвания на пару строк</p>
+                  <a class="promo__product-link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="promo__item swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/product1-mob.png" width="515" height="142">
+                  <img class="promo__image" src="img/product1.png" width="1193" height="328" alt="Фото товара.">
+                </picture>
+                <div class="promo__text">
+                  <h3 class="promo__product-name">SFX14000-BSRV-12U</h3>
+                  <p class="promo__product-description">Тоже описание, еще более красивое и лаконичное.</p>
+                  <a class="promo__product-link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="promo__item swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/product1-mob.png" width="515" height="142">
+                  <img class="promo__image" src="img/product1.png" width="1193" height="328" alt="Фото товара.">
+                </picture>
+                <div class="promo__text">
+                  <h3 class="promo__product-name">SFX14000-BSRV-12U</h3>
+                  <p class="promo__product-description">Небольшое описание оборудвания на пару строк</p>
+                  <a class="promo__product-link" href="#">Подробнее</a>
+                </div>
+              </li>
+              <li class="promo__item swiper-slide">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="img/product1-mob.png" width="515" height="142">
+                  <img class="promo__image" src="img/product1.png" width="1193" height="328" alt="Фото товара.">
+                </picture>
+                <div class="promo__text">
+                  <h3 class="promo__product-name">SFX14000-BSRV-12U</h3>
+                  <p class="promo__product-description">Тоже описание, еще более красивое и лаконичное.</p>
+                  <a class="promo__product-link" href="#">Подробнее</a>
+                </div>
+              </li>
+            </ul>
+            <div class="promo__handler">
+              <div class="promo__pagination swiper-pagination"></div>
+              <div class="promo__button-prev swiper-button-prev"></div>
+              <div class="promo__button-next swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="promo__hero">
+            <p class="promo__slogan">Разработчик и производитель оборудования для систем безопасности, автоматизации и
+              диспетчеризации</p>
+            <div class="promo__hero-link-container">
+              <a class="promo__hero-link main-button" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="promo__about">
+            <div class="promo__about-case">
+              <p class="promo__about-subtitle">3&nbsp;000+</p>
+              <p class="promo__about-description">объектов оснащено нашим оборудованием</p>
+            </div>
+            <div class="promo__more-case">
+              <h3 class="promo__more-subtitle">&#62;&nbsp;1&nbsp;000</h3>
+              <p class="promo__more-description">партнеров, реализо-вывающих наше оборудование</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__news news">
+        <div class="news__container container">
+          <div class="news__header-block header-block">
+            <h2 class="news__header header-block__header">Новости</h2>
+            <a class="header-block__link-group" href="#">
+              <p class="header-block__link header-block__link">смотреть все</p>
+              <div class="header-block__link-arrow"></div>
+            </a>
+          </div>
+          <div class="news__swiper swiper">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__item news__item--primary swiper-slide">
+                <a class="news__link" href="#">
+                  <img class="news__image" src="img/news1.jpg" width="699" height="400" alt="Иллюстрация к новости.">
+                  <div class="news__text">
+                    <div class="news__tag">Важная новость</div>
+                    <time class="news__date" datetime="2024-06-27">27.06.2024</time>
+                    <h3 class="news__header">Рекомендации по выбору IP-видеокамер СферИТ серии P</h3>
+                    <span class="news__icon"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item news__item--secondary swiper-slide">
+                <a class="news__link" href="#">
+                  <img class="news__image" src="img/news2.jpg" width="341" height="400" alt="Иллюстрация к новости.">
+                  <div class="news__text">
+                    <time class="news__date" datetime="2024-06-27">27.06.2024</time>
+                    <h3 class="news__header">Видеосерверы в условиях ограничений</h3>
+                    <span class="news__icon"></span>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item news__item--secondary swiper-slide">
+                <a class="news__link" href="#">
+                  <img class="news__image" src="img/news3.jpg" width="341" height="400" alt="Иллюстрация к новости.">
+                  <div class="news__text">
+                    <time class="news__date" datetime="2024-06-27">27.06.2024</time>
+                    <h3 class="news__header">Видеосерверы в условиях ограничений</h3>
+                    <span class="news__icon"></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__portfolio portfolio">
+        <div class="portfolio__container container">
+          <div class="portfolio__header-container header-block">
+            <h2 class="portfolio__header header-block__header">Реализованные проекты</h2>
+            <a class="header-block__link-group" href="#">
+              <p class="portfolio__link header-block__link">смотреть все</p>
+              <div class="header-block__link-arrow"></div>
+            </a>
+          </div>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <div class="portfolio__item-link">
+                <img class="portfolio__image" src="img/portfolio1.jpg" width="660" height="313"
+                  alt="Иллюстрация к реализованному проекту.">
+                <h3 class="portfolio__title">IP-видеонаблюдение в бизнес центре B+. 81 IP-камера</h3>
+                <p class="portfolio__subtitle">Знак признания высокого качества и надежности продукции компании СферИТ,
+                  а
+                  также удостоверение ее соответствия строгим требованиям в области безопасности.</p>
+                <time class="portfolio__date" datetime="2024-06-27">27.06.2024</time>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <div class="portfolio__item-link">
+                <img class="portfolio__image" src="img/portfolio2.jpg" width="660" height="313"
+                  alt="Иллюстрация к реализованному проекту.">
+                <h3 class="portfolio__title">IP-видеонаблюдение в бизнес центре B+. 81 IP-камера</h3>
+                <p class="portfolio__subtitle">Знак признания высокого качества и надежности продукции компании СферИТ,
+                  а
+                  также удостоверение ее соответствия строгим требованиям в области безопасности.</p>
+                <time class="portfolio__date" datetime="2024-06-27">27.06.2024</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-main__feedback feedback">
+        <div class="feedback__container container">
+          <div class="feedback__bg-container">
+            <div class="feedback__text">
+              <h3 class="feedback__header">Задать вопрос</h3>
+              <p class="feedback__description">Не знаете с чего начать? Мы пока тоже не знаем. Давайте разберемся
+                вместе!
+              </p>
+              <div class="feedback__person">
+                <img class="feedback__person-image" src="img/staff-pic.jpg" width="90" height="90"
+                  alt="Фото сотрудника.">
+                <div class="feedback__person-text">
+                  <h4 class="feedback__name">Павел Коротков</h4>
+                  <p class="feedback__position">
+                    Руководитель отдела продаж
+                  </p>
+                </div>
+              </div>
+            </div>
+            <form class="feedback__form" id="form" novalidate method="post" action="https://echo.htmlacademy.ru">
+              <fieldset class=" feedback__fieldset">
+                <ul class="feedback__form-list">
+                  <li class="feedback__form-item">
+                    <div class="feedback__form-group">
+                      <input class="feedback__form-input" name="name" type="text" id="name" placeholder="Ваше имя *"
+                        required data-pristine-required-message="Обязательное поле" minlength="2"
+                        data-pristine-minlength-message="Ваше имя точно длиннее">
+                    </div>
+                  </li>
+                  <li class="feedback__form-item">
+                    <div class="feedback__form-group">
+                      <input class="feedback__form-input" name="email" type="email" id="email" placeholder="Ваш имейл *"
+                        required data-pristine-required-message="Обязательное поле"
+                        data-pristine-email-message="Некорректно введен адрес">
+                    </div>
+                  <li class="feedback__form-item">
+                    <div class="feedback__form-group">
+                      <input class="feedback__form-input" name="phone" type="text" id="phone" minlength="10"
+                        placeholder="Номер телефона" data-pristine-minlength-message="Не хватает цифр">
+                    </div>
+                  </li>
+                  <li class="feedback__form-item">
+                    <div class="feedback__form-group">
+                      <textarea class="feedback__form-input feedback__form-input--message" name="message" id="message"
+                        placeholder="Ваше сообщение *" required data-pristine-required-message="Обязательное поле"
+                        minlength="15"
+                        data-pristine-minlength-message="Напишите чуть подроднее (хотя бы на 15 символов)"></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <div class="feedback__button-block">
+                  <button class="feedback__button main-button" type="submit">Отправить</button>
+                  <p class="feedback__add">Нажимая кнопку «Отправить», Вы принимаете условия <a
+                      class="feedback__add-link" href="#">Политики
+                      конфиденциальности</a>, а также
+                    даете <a class="feedback__add-link" href="#">Согласие
+                      на обработку Ваших персональных данных и их передачу.</a></p>
+                </div>
+                <div class="feedback__success-message feedback__success-message--closed">Ваш вопрос успешно отправлен. В
+                  ближайшее время вам ответит наш
+                  специалист
+                </div>
+                <div class="feedback__fail-message feedback__fail-message--closed">Ужас, ничего не вышло. Мы не виноваты
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__nav footer-nav">
+        <div class="footer-nav__container container">
+          <div class="footer-nav__copyright">
+            <a class="footer-nav__logo-link">
+              <img class="footer-nav__logo" src="img/logo-footer.svg" width="160" height="51"
+                alt="Логотип компании Сферит.">
+              <div class="footer-nav__logo-text">Разработчик и производитель оборудования для систем безопасности,
+                автоматизации и диспетчеризации</div>
+            </a>
+          </div>
+          <div class="footer-nav__contacts">
+            <a class="footer-nav__phone-link" href="tel:+79161578274">+7 916 157-82-74</a>
+            <a class="footer-nav__mail-link" href="mailto:info@sferit.com">info@sferit.com</a>
+            <p class="footer-nav__address">107078, г. Москва, ул. Новая Басманная,
+              д. 14, стр. 4, офис 405</p>
+          </div>
+          <div class="footer-nav__products">
+            <a class="footer-nav__subtitle-link" href="#">
+              <h2 class="footer-nav__subtitle">Продукты и решения</h2>
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__item-link" href="#">Коммутарторы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item-link" href="#">Маршрутизаторы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item-link" href="#">WiFi</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item-link" href="#">Безопасность</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__item-link" href="#">Серверы</a>
+              </li>
+            </ul>
+            <a class="footer-nav__subtitle-link" href="#">
+              <h2 class="footer-nav__subtitle footer-nav__subtitle--solo">Реализованные проекты</h2>
+            </a>
+          </div>
+          <div class="footer-nav__nav-block">
+            <ul class="footer-nav__nav-list">
+              <li class="footer-nav__nav-item">
+                <a class="footer-nav__nav-link footer-nav__subtitle" href="#">Поддержка и гарантия</a>
+              </li>
+              <li class="footer-nav__nav-item">
+                <a class="footer-nav__nav-link footer-nav__subtitle" href="#">Документация</a>
+              </li>
+              <li class="footer-nav__nav-item">
+                <a class="footer-nav__nav-link footer-nav__subtitle" href="#">Партнёрам</a>
+              </li>
+              <li class="footer-nav__nav-item">
+                <a class="footer-nav__nav-link footer-nav__subtitle" href="#">Новости</a>
+              </li>
+              <li class="footer-nav__nav-item">
+                <a class="footer-nav__nav-link footer-nav__subtitle" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footer__output output">
+        <div class="output__container container">
+          <div class="output__links">
+            <ul class="output__list">
+              <li class="output__item">
+                <a class="output__link" href="#">Политика конфиденциальности</a>
+              </li>
+              <li class="output__item">
+                <a class="output__link" href="#">Согласие на обработку персональных данных</a>
+              </li>
+              <li class="output__item">
+                <a class="output__link" href="#">© 2024 ООО ООО «СферИТ» Все права защищены.</a>
+              </li>
+            </ul>
+          </div>
+          <a class="output__developer" href="#">
+            <p class="output__developer-text">Сайт разработан</p>
+            <span class="visually-hidden">компанией Аквилон.</span>
+            <img class="output__developer-logo" src="img/dev.svg" width="157" height="32" alt="Логотип Аквилон.">
+          </a>
+        </div>
+      </section>
+    </footer>
+
+    <div class="popup popup--closed">
+      <div class="popup__container">
+        <button class="popup__close-button" type="button"></button>
+        <div class="popup__swiper swiper">
+          <ul class="popup__list swiper-wrapper">
+            <li class="popup__item swiper-slide">
+              <h2 class="popup__title">IP-видеонаблюдение в медицинской клинике. 32 IP-камеры</h2>
+              <time class="popup__date" datetime="2024-06-27">27.06.2024</time>
+              <img class="popup__image" src="img/portfolio1.jpg" width="660" height="313"
+                alt="Иллюстрация к реализованному проекту.">
+              <p class="popup__subtitle">В центре системы находится видеосервер VIDEOMAX на базе программного
+                обеспечения Axxon Next. Сервер управляет системой и хранит видеоархив. В качестве активного
+                оборудования
+                используются недорогие управляемые коммутаторы с поддержкой PoE на всех 24 портах, общей мощность 140
+                Вт
+                от Allied Telesis.</p>
+            </li>
+            <li class="popup__item swiper-slide">
+              <h2 class="popup__title">IP-видеонаблюдение в медицинской клинике. 32 IP-камеры</h2>
+              <time class="popup__date" datetime="2024-06-27">27.06.2024</time>
+              <img class="popup__image" src="img/portfolio2.jpg" width="660" height="313"
+                alt="Иллюстрация к реализованному проекту.">
+              <p class="popup__subtitle">В центре системы находится видеосервер VIDEOMAX на базе программного
+                обеспечения Axxon Next. Сервер управляет системой и хранит видеоархив. В качестве активного оборудования
+                используются недорогие управляемые коммутаторы с поддержкой PoE на всех 24 портах, общей мощность 140 Вт
+                от Allied Telesis.</p>
+            </li>
+            <li class="popup__item swiper-slide">
+              <h2 class="popup__title">IP-видеонаблюдение в медицинской клинике. 32 IP-камеры</h2>
+              <time class="popup__date" datetime="2024-06-27">27.06.2024</time>
+              <img class="popup__image" src="img/portfolio1.jpg" width="660" height="313"
+                alt="Иллюстрация к реализованному проекту.">
+              <p class="popup__subtitle">Знак признания высокого качества и надежности продукции компании СферИТ,
+                а
+                также удостоверение ее соответствия строгим требованиям в области безопасности.</p>
+            </li>
+            <li class="popup__item swiper-slide">
+              <h2 class="popup__title">IP-видеонаблюдение в медицинской клинике. 32 IP-камеры</h2>
+              <time class="popup__date" datetime="2024-06-27">27.06.2024</time>
+              <img class="popup__image" src="img/portfolio2.jpg" width="660" height="313"
+                alt="Иллюстрация к реализованному проекту.">
+              <p class="popup__subtitle">В центре системы находится видеосервер VIDEOMAX на базе программного
+                обеспечения Axxon Next. Сервер управляет системой и хранит видеоархив. В качестве активного оборудования
+                используются недорогие управляемые коммутаторы с поддержкой PoE на всех 24 портах, общей мощность 140 Вт
+                от Allied Telesis.</p>
+            </li>
+          </ul>
+          <div class="popup__handler">
+            <div class="popup__pagination swiper-pagination"></div>
+            <div class="popup__button-prev swiper-button-prev"></div>
+            <div class="popup__button-next swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="popup__offer">
+          <h3 class="popup__offer-header">
+            Понравился проект?<br>
+            Можем реализовать такой для вас!
+          </h3>
+          <button class="popup__button main-button">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/pristine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/vendor/jquery-1.8.3.min.js"></script>
+  <script src="js/vendor/jquery.maskedinput.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
