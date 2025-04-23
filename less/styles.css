@@ -109,6 +109,7 @@ html {
 @media (max-width: 830px) {
   .main-header {
     min-height: 57px;
+    border-bottom: solid 1px #ebecec;
   }
 }
 .main-header__additional {
@@ -179,7 +180,7 @@ html {
 .main-header__close-button::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 0;
   width: 100%;
   height: 3px;
@@ -189,7 +190,7 @@ html {
 .main-header__close-button::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 6px;
   right: 0;
   width: 100%;
   height: 3px;
@@ -230,6 +231,13 @@ html {
   flex-direction: column;
   position: fixed;
   top: 0;
+}
+.main-header--scroll .additional__nav {
+  margin-right: auto;
+}
+.main-header--scroll .hero__button-wrapper {
+  margin-right: 6px;
+  margin-bottom: 5px;
 }
 .main-header--scroll .hero {
   border: 0;
@@ -272,6 +280,9 @@ html {
 }
 .main-header--scroll .additional__item {
   width: fit-content;
+}
+.main-header--scroll .additional__item:not(:last-child) {
+  margin-right: 24px;
 }
 .main-header--scroll .hero__logo-image {
   margin: 0;
@@ -323,6 +334,7 @@ html {
   .promo {
     padding-top: 80px;
     padding-bottom: 45px;
+    background-image: url(../img/promo-back-mob.svg);
   }
 }
 .promo__container {
@@ -522,6 +534,7 @@ html {
   font-size: 20px;
   font-weight: 600;
   z-index: 4;
+  text-decoration: none;
 }
 @media (max-width: 830px) {
   .promo__hero-link {
@@ -533,6 +546,8 @@ html {
   .promo__hero-link {
     width: auto;
     max-width: none;
+    font-size: 20px;
+    font-weight: 600;
   }
 }
 .promo__more-description,
@@ -1400,8 +1415,9 @@ html {
   border: 0;
   margin-right: 92px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  font: inherit;
+  font-family: "TildaSans", Arial, sans-serif;
   background-color: #3ab7b3;
+  font: inherit;
   color: #ffffff;
   padding: 10px;
   box-sizing: border-box;
@@ -1420,6 +1436,11 @@ html {
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+.wrapper .main-button {
+  font-weight: 600;
+  font-size: 20px;
+  min-height: 64px;
 }
 .footer-nav {
   padding: 60px 0 50px;
@@ -1744,7 +1765,7 @@ html {
   min-width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 0 10px;
+  padding: 10px 0 10px;
   box-sizing: border-box;
   border-bottom: solid 1px #ebecec;
 }
@@ -1755,7 +1776,6 @@ html {
 }
 .hero__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -1851,6 +1871,9 @@ html {
   font-size: 14px;
   color: #ffffff;
 }
+.hero__button-wrapper {
+  margin-right: auto;
+}
 .hero__button {
   width: 45px;
   height: 45px;
@@ -1888,7 +1911,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-left: 10px;
+  margin-left: auto;
 }
 @media (max-width: 830px) {
   .hero__contacts {
@@ -2335,7 +2358,7 @@ html {
 }
 .main-header-popup__list {
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 30px 0;
   list-style-type: none;
   overflow-y: auto;
   height: 354px;
@@ -2344,6 +2367,7 @@ html {
 .main-header-popup__link {
   text-decoration: none;
   color: #ffffff;
+  line-height: 120%;
 }
 .main-header-popup__submenu {
   margin: 0;
@@ -2363,12 +2387,13 @@ html {
   list-style-type: none;
 }
 .main-header-popup__subitem:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .main-header-popup__sublink {
   color: #7B7a79;
   text-decoration: none;
   font-size: 14px;
+  line-height: 120%;
 }
 .main-header-popup__link {
   background-color: transparent;
@@ -2396,12 +2421,40 @@ html {
 .main-header-popup__phone-link {
   color: #ffffff;
   text-decoration: none;
+  font-size: 36px;
+  line-height: 100%;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 17px;
+}
+.main-header-popup__phone-link::after {
+  width: 99vw;
+  left: -19px;
+  height: 1px;
+  background-color: #ebecec;
+  top: -27px;
+  position: absolute;
+  z-index: 7;
+  content: "";
 }
 .main-header-popup__description {
   font-size: 12px;
   font-weight: 500;
   line-height: 100%;
   color: rgba(255, 255, 255, 0.4);
+  margin-top: 5px;
+  margin-bottom: 58px;
+  position: relative;
+}
+.main-header-popup__description::after {
+  width: 99vw;
+  left: -19px;
+  height: 1px;
+  background-color: #ebecec;
+  bottom: -20px;
+  position: absolute;
+  z-index: 7;
+  content: "";
 }
 .main-header-popup__contacts {
   display: flex;
@@ -2411,6 +2464,7 @@ html {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.4);
   font-weight: 500;
+  font-size: 24px;
 }
 .main-header-popup--closed {
   display: none;
