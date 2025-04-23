@@ -2253,9 +2253,9 @@ html {
   border-radius: 12px;
   height: 393px;
 }
-@media (max-width: 450px) {
+@media (max-width: 767px) {
   .popup__image {
-    height: 300px;
+    height: auto;
   }
 }
 .popup__offer {
