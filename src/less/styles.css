@@ -335,6 +335,7 @@ html {
     padding-top: 80px;
     padding-bottom: 45px;
     background-image: url(../img/promo-back-mob.svg);
+    background-size: 100% 100%;
   }
 }
 .promo__container {
