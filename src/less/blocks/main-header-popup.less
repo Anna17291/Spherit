@@ -1,0 +1,133 @@
+.main-header-popup {
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  width: 100%;
+  max-width: 100%;
+
+  &__container {
+    overflow-y: auto;
+    max-width: 100%;
+    padding: 0 20px 49px 20px;
+    min-height: 654px;
+    height: fit-content;
+    background-color: #2B2A29;
+    opacity: 1;
+    z-index: 120;
+    width: 100%;
+    margin-top: -2px;
+  }
+
+  &__submenu--closed {
+    display: none;
+  }
+
+  &__submenu--opened {
+    display: block;
+    top: 0;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 0 25px 0;
+    list-style-type: none;
+    overflow-y: auto;
+    height: 354px;
+    max-width: 100%;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  &__submenu {
+    margin: 0;
+    padding: 15px 0 0;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    max-width: 100%;
+
+    &--relative {
+      position: relative;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subitem {
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__sublink {
+    color: #7B7a79;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  &__link {
+    background-color: transparent;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 30px 0 0;
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "TildaSans", Arial, sans-serif;
+  }
+
+  &__arrow {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-bottom: solid 2px #3ab7b3;
+    border-left: solid 2px #3ab7b3;
+    transform: rotate(-135deg);
+    right: 5px;
+    top: 0
+  }
+
+  &__phone-link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    color: rgba(255, 255, 255, 0.4);
+
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__mail-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 500;
+  }
+}
+
+.main-header-popup--closed {
+  display: none;
+}
+
+.main-header-popup--opened {
+  display: block;
+}

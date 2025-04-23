@@ -1,0 +1,36 @@
+.main-button {
+  position: relative;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  min-height: 64px;
+  height: fit-content;
+  border-radius: 12px;
+  border: 0;
+  margin-right: 92px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  font: inherit;
+  background-color: #3ab7b3;
+  color: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 92px;
+    height: 100%;
+    border-radius: 12px;
+    right: -92px;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    background-color: #3ab7b3;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
