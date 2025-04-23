@@ -30,7 +30,7 @@
 
   &__list {
     padding: 0;
-    margin: 0 0 25px 0;
+    margin: 0 0 30px 0;
     list-style-type: none;
     overflow-y: auto;
     height: 354px;
@@ -40,6 +40,7 @@
   &__link {
     text-decoration: none;
     color: #ffffff;
+    line-height: 120%;
   }
 
   &__submenu {
@@ -64,7 +65,7 @@
     list-style-type: none;
 
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 21px;
     }
   }
 
@@ -72,6 +73,7 @@
     color: #7B7a79;
     text-decoration: none;
     font-size: 14px;
+    line-height: 120%;
   }
 
   &__link {
@@ -102,6 +104,22 @@
   &__phone-link {
     color: #ffffff;
     text-decoration: none;
+    font-size: 36px;
+    line-height: 100%;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 17px;
+
+    &::after {
+      width: 99vw;
+      left: -19px;
+      height: 1px;
+      background-color: #ebecec;
+      top: -27px;
+      position: absolute;
+      z-index: 7;
+      content: "";
+    }
   }
 
   &__description {
@@ -109,7 +127,20 @@
     font-weight: 500;
     line-height: 100%;
     color: rgba(255, 255, 255, 0.4);
+    margin-top: 5px;
+    margin-bottom: 58px;
+    position: relative;
 
+    &::after {
+      width: 99vw;
+      left: -19px;
+      height: 1px;
+      background-color: #ebecec;
+      bottom: -20px;
+      position: absolute;
+      z-index: 7;
+      content: "";
+    }
   }
 
   &__contacts {
@@ -121,6 +152,7 @@
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
     font-weight: 500;
+    font-size: 24px;
   }
 }
 
