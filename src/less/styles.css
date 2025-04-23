@@ -2518,7 +2518,8 @@ html {
   position: absolute;
   bottom: -17px;
   left: 32px;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "TildaSans", Arial, sans-serif;
 }
 .page-header {
   position: fixed;
