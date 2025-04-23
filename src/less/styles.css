@@ -721,7 +721,7 @@ html {
   .promo__tooltip {
     display: block;
     position: absolute;
-    right: 22px;
+    right: 7.1%;
     top: -110px;
     width: 40px;
     height: 40px;
@@ -2109,15 +2109,28 @@ html {
   font-weight: 500;
   padding-right: 5%;
   box-sizing: border-box;
+  height: 96px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@media (max-width: 1660px) {
+  .popup__title {
+    font-size: 30px;
+    height: 80px;
+  }
 }
 @media (max-width: 1023px) {
   .popup__title {
-    font-size: 4vw;
+    font-size: 26px;
   }
 }
 @media (max-width: 767px) {
   .popup__title {
-    font-size: 4vw;
+    font-size: 26px;
+    height: fit-content;
+    min-height: 65px;
   }
 }
 .popup__date {
@@ -2127,14 +2140,43 @@ html {
   margin: 0 0 20px;
   display: block;
 }
+.popup__handler {
+  position: absolute;
+  width: 149px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  border-radius: 100px;
+  top: 492px;
+}
+@media (max-width: 1660px) {
+  .popup__handler {
+    top: 450px;
+  }
+}
+@media (max-width: 1023px) {
+  .popup__handler {
+    top: 460px;
+  }
+}
+@media (max-width: 767px) {
+  .popup__handler {
+    bottom: 20px;
+    top: auto;
+  }
+}
 .popup__subtitle {
   font-size: 18px;
   line-height: 24px;
   color: #7b7a79;
   margin: 0;
   max-height: 98px;
-  height: fit-content;
-  overflow-y: auto;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (max-width: 1023px) {
   .popup__subtitle {
@@ -2192,9 +2234,9 @@ html {
   width: 100%;
   object-fit: cover;
   margin-bottom: 20px;
-  height: auto;
   aspect-ratio: 1/0.405;
   border-radius: 12px;
+  height: 393px;
 }
 .popup__offer {
   padding: 21px 30px 26px;
@@ -2307,28 +2349,6 @@ html {
   border-top: solid 2px #ffffff;
   border-left: solid 2px #ffffff;
   z-index: 4;
-}
-.popup__handler {
-  position: absolute;
-  top: 70%;
-  width: 149px;
-  height: 30px;
-  background-color: rgba(0, 0, 0, 0.4);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 4;
-  border-radius: 100px;
-}
-@media (max-width: 1660px) {
-  .popup__handler {
-    top: 68%;
-  }
-}
-@media (max-width: 1023px) {
-  .popup__handler {
-    top: auto;
-    bottom: 25px;
-  }
 }
 .main-header-popup {
   height: 100vh;
