@@ -1107,6 +1107,7 @@ html {
 @media (max-width: 767px) {
   .header-block__header::after {
     right: 10px;
+    top: 40%;
   }
 }
 @media (max-width: 767px) {
@@ -1144,6 +1145,16 @@ html {
   height: 13px;
   right: 0;
   top: 20px;
+}
+@media (max-width: 830px) {
+  .header-block__link-arrow {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .header-block__link-arrow--news {
+    right: 20px;
+  }
 }
 .feedback {
   padding: 100px 0;
