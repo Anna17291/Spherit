@@ -97,8 +97,6 @@ const manageHeader = () => {
   }
 
   const closeSearch = () => {
-
-
     sectionSearch.classList.add('search-block--closed');
     sectionSearch.classList.remove('search-block--opened');
     button.addEventListener('click', openSearch);
@@ -154,7 +152,11 @@ const manageForm = () => {
       );
   };
 
-  let pristine = new Pristine(form);
+  let pristine = new Pristine(form, {
+    classTo: 'feedback__form-group',
+    errorTextParent: 'feedback__form-group'
+  });
+
   const initValidatePristine = (onSuccess) => {
     form.addEventListener('submit', (evt) => {
       evt.preventDefault();
